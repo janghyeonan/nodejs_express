@@ -1,18 +1,15 @@
 const express = require('express');
 const path = require('path');
 const moment = require('moment') //시간을 넣어주는 모듈
+const logger = require('./middleware/logger')
 const members = require('./Members');
 
 
+
+//31분부터...
+
 const app = express();
 
-const logger = (req, res, next) => {
-    console.log(`${req.protocol}://${req.get('host')}${
-        req.originalUrl
-    }:${moment().format()}`
-    );
-    next();
-}
 
 //init moddleware
 app.use(logger);
