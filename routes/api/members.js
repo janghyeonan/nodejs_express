@@ -33,8 +33,8 @@ router.post('/', (req, res) => {
         return res.status(400).json({ msg: `Plase include a name and email` });
     }
     members.push(newMember);
-    res.json(members);
-    //res.redirect('/')
+    //res.json(members); //json파일 보여주기
+    res.redirect('/') //바로 앞 페이지로 리다이렉트
 });
 
 //update member 업데이트 맴버
