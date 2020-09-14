@@ -1,22 +1,24 @@
+//맴버 리스트
+
 const members = [
-    {
-      id: 1,
-      name: 'John Doe',
-      email: 'john@gmail.com',
-      status: 'active'
-    },
-    {
-      id: 2,
-      name: 'Bob Williams',
-      email: 'bob@gmail.com',
-      status: 'inactive'
-    },
-    {
-      id: 3,
-      name: 'Shannon Jackson',
-      email: 'shannon@gmail.com',
-      status: 'active'
-    }
-  ];
-  
-  module.exports = members;
+  {
+    id: 1,
+    name: 'test1',
+    email: 'test@email.com',
+    status: 'active'
+  },
+  {
+    id: 2,
+    name: 'test2',
+    email: 'test2@email.com',
+    status: 'inactive'
+  },
+  {
+    id: 3,
+    name: 'test3',
+    email: 'test3@email.com',
+    status: 'active'
+  }
+];
+
+module.exports = members;
